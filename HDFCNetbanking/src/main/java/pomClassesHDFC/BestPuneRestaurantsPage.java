@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class BestPuneRestaurantsPage {
+	//BestPuneRestaurantsPage POM class for searching
 	//Source-FreeTableReservationWithDiscounts
 	//Variables
 	@FindBy (xpath="(//div[@class='filter-component-wrap _quickfilters-wrap']//li)[3]/label/span")
