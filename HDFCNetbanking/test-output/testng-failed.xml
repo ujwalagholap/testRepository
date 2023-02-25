@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteRegression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNGHDFC.HDFCTestNG1">
+        <methods>
+          <include name="backToMainPage"/>
+          <include name="compareAndFlyTest"/>
+          <include name="clearPOMObjects"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="goToKnowMore"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- testNGHDFC.HDFCTestNG1 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testNGHDFC.HDFCTestNG1">
+        <methods>
+          <include name="backToMainPage"/>
+          <include name="clearPOMObjects"/>
+          <include name="BookResturantTest"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="goToKnowMore"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- testNGHDFC.HDFCTestNG1 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [SuiteRegression] -->

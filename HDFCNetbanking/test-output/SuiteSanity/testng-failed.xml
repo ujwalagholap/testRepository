@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteSanity]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testNGHDFC.HDFCTestNG">
+        <methods>
+          <include name="backToMainPage"/>
+          <include name="clearPOMObjects"/>
+          <include name="locateTheBranch"/>
+          <include name="goToKnowMore"/>
+          <include name="checkTheIFSCCode"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- testNGHDFC.HDFCTestNG -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [SuiteSanity] -->

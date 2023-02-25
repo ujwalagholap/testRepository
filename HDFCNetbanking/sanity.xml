@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteSanity">
+ <test name="ChromeTest" thread-count="1" parallel="classes">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNGHDFC.HDFCTestNG">
+     	 <methods>
+      		<include name="locateTheBranch"/>
+      		<include name="checkTheIFSCCode"/>    
+      	</methods>
+      </class>
+     
+    </classes>
+  </test> <!-- TestSanity -->
+  
+  <test name="FirefoxTest" thread-count="1" parallel="classes">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testNGHDFC.HDFCTestNG">
+     	 <methods>
+      		<include name="locateTheBranch"/>
+      		<include name="checkTheIFSCCode"/>    
+      	</methods>
+      </class>
+    </classes>
+  </test>
+</suite> <!-- SuiteSanity -->
